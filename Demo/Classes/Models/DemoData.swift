@@ -11,5 +11,6 @@ import Foundation
 let demoData = [
     framework(name: "Dynamics"),
     //continue frameworks here
-    framework(name: "MessageBoard")
+    framework(name: "MessageBoard"),
+    framework(name: "Background")
 ]

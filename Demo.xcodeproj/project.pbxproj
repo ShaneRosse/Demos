@@ -25,6 +25,7 @@
 		977697021C53333E00217A0E /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977697011C53333E00217A0E /* DemoData.swift */; };
 		977697041C5333E900217A0E /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977697031C5333E900217A0E /* FrameworkCell.swift */; };
 		977697061C533C3300217A0E /* DynamicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977697051C533C3300217A0E /* DynamicsVC.swift */; };
+		979AAF3C1C6445880066B3BE /* BackgroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979AAF3B1C6445880066B3BE /* BackgroundVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		977697011C53333E00217A0E /* DemoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		977697031C5333E900217A0E /* FrameworkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 		977697051C533C3300217A0E /* DynamicsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicsVC.swift; sourceTree = "<group>"; };
+		979AAF3B1C6445880066B3BE /* BackgroundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				977697051C533C3300217A0E /* DynamicsVC.swift */,
 				971C48441C5AFD7400D8974E /* MessageBoardVC.swift */,
 				977136CD1C61AF1400FB30F9 /* NewPostVC.swift */,
+				979AAF3B1C6445880066B3BE /* BackgroundVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				971C48451C5AFD7400D8974E /* MessageBoardVC.swift in Sources */,
 				977697061C533C3300217A0E /* DynamicsVC.swift in Sources */,
 				977696FE1C532FB600217A0E /* FrameworkTableViewController.swift in Sources */,
+				979AAF3C1C6445880066B3BE /* BackgroundVC.swift in Sources */,
 				977697041C5333E900217A0E /* FrameworkCell.swift in Sources */,
 				977136CC1C61AA5B00FB30F9 /* ModelBase.swift in Sources */,
 				970B2FD21C4F304D002FB9B6 /* AppDelegate.swift in Sources */,
