@@ -328,14 +328,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tqA-xA-b1a">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="MmP-6e-mSg">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Download Serial"/>
-                            <connections>
-                                <action selector="button1Action:" destination="0eh-HT-5rw" eventType="touchUpInside" id="LI7-Rn-snw"/>
-                            </connections>
-                        </button>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaP-oN-eJw">
+                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                    <state key="normal" title="Download Concurrent"/>
+                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                        <rect key="frame" x="125" y="57" width="150" height="12"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="button2Action:" destination="0eh-HT-5rw" eventType="touchUpInside" id="SE0-vy-78r"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zut-gZ-MuF">
+                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                    <state key="normal" title="Download Serial"/>
+                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                        <rect key="frame" x="125" y="0.0" width="150" height="49"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="button1Action:" destination="0eh-HT-5rw" eventType="touchUpInside" id="EZ7-qG-qX6"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="YaP-oN-eJw"/>
+                                    <exclude reference="Zut-gZ-MuF"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="subviews">
+                                    <include reference="YaP-oN-eJw"/>
+                                    <include reference="Zut-gZ-MuF"/>
+                                </mask>
+                            </variation>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ImageCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" textLabel="75F-6G-2XQ" style="IBUITableViewCellStyleDefault" id="Swo-wg-GA5">
                                 <rect key="frame" x="0.0" y="58" width="600" height="44"/>
@@ -344,7 +375,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="75F-6G-2XQ">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="75F-6G-2XQ">
                                             <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -364,13 +395,14 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="button2" destination="tqA-xA-b1a" id="Cvh-Lg-5M9"/>
+                        <outlet property="button1" destination="Zut-gZ-MuF" id="OVf-ff-geg"/>
+                        <outlet property="button2" destination="YaP-oN-eJw" id="r0z-YV-Yzn"/>
                         <outlet property="imageTable" destination="Z8k-uH-l1p" id="yeI-XE-Dhk"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFL-3B-Riy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="650.25"/>
+            <point key="canvasLocation" x="1066.5" y="645.75"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7rr-iO-46L">
