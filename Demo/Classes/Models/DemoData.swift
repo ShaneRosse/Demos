@@ -12,5 +12,6 @@ let demoData = [
     framework(name: "Dynamics"),
     //continue frameworks here
     framework(name: "MessageBoard"),
-    framework(name: "Background")
+    framework(name: "Background"),
+    framework(name: "FBFriends")
 ]

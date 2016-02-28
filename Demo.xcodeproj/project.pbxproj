@@ -26,6 +26,11 @@
 		977697041C5333E900217A0E /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977697031C5333E900217A0E /* FrameworkCell.swift */; };
 		977697061C533C3300217A0E /* DynamicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977697051C533C3300217A0E /* DynamicsVC.swift */; };
 		979AAF3C1C6445880066B3BE /* BackgroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979AAF3B1C6445880066B3BE /* BackgroundVC.swift */; };
+		979C369B1C7FD0C80034A162 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AB82CE1C7D588F000508EB /* FBSDKCoreKit.framework */; };
+		979C369C1C7FD0C80034A162 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AB82CF1C7D588F000508EB /* FBSDKLoginKit.framework */; };
+		979C369D1C7FD0C80034A162 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AB82D01C7D588F000508EB /* FBSDKShareKit.framework */; };
+		97AB82C91C7D439D000508EB /* FBFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AB82C81C7D439D000508EB /* FBFriendsVC.swift */; };
+		97AB82CD1C7D497E000508EB /* FBLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AB82CC1C7D497E000508EB /* FBLoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		977697031C5333E900217A0E /* FrameworkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 		977697051C533C3300217A0E /* DynamicsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicsVC.swift; sourceTree = "<group>"; };
 		979AAF3B1C6445880066B3BE /* BackgroundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundVC.swift; sourceTree = "<group>"; };
+		97AB82C81C7D439D000508EB /* FBFriendsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBFriendsVC.swift; sourceTree = "<group>"; };
+		97AB82CC1C7D497E000508EB /* FBLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FBLoginVC.swift; path = ../../../FBLoginVC.swift; sourceTree = "<group>"; };
+		97AB82CE1C7D588F000508EB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../../../../Documents/FacebookSDKs-iOS-20160210/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		97AB82CF1C7D588F000508EB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../../../Documents/FacebookSDKs-iOS-20160210/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		97AB82D01C7D588F000508EB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../../../../Documents/FacebookSDKs-iOS-20160210/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979C369B1C7FD0C80034A162 /* FBSDKCoreKit.framework in Frameworks */,
+				979C369C1C7FD0C80034A162 /* FBSDKLoginKit.framework in Frameworks */,
+				979C369D1C7FD0C80034A162 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +195,9 @@
 		970B300B1C4F320E002FB9B6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				97AB82CE1C7D588F000508EB /* FBSDKCoreKit.framework */,
+				97AB82CF1C7D588F000508EB /* FBSDKLoginKit.framework */,
+				97AB82D01C7D588F000508EB /* FBSDKShareKit.framework */,
 			);
 			name = Helpers;
 			path = Classes/Helpers;
@@ -206,6 +222,8 @@
 				971C48441C5AFD7400D8974E /* MessageBoardVC.swift */,
 				977136CD1C61AF1400FB30F9 /* NewPostVC.swift */,
 				979AAF3B1C6445880066B3BE /* BackgroundVC.swift */,
+				97AB82C81C7D439D000508EB /* FBFriendsVC.swift */,
+				97AB82CC1C7D497E000508EB /* FBLoginVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -363,6 +381,7 @@
 				977136CA1C61AA5500FB30F9 /* Post.swift in Sources */,
 				977697001C53328400217A0E /* Framework.swift in Sources */,
 				977136C01C61A06300FB30F9 /* ManagerBase.swift in Sources */,
+				97AB82CD1C7D497E000508EB /* FBLoginVC.swift in Sources */,
 				977136CE1C61AF1400FB30F9 /* NewPostVC.swift in Sources */,
 				977136C41C61A86000FB30F9 /* PostsManager.swift in Sources */,
 				977136C21C61A09100FB30F9 /* ServerAPIManager.swift in Sources */,
@@ -370,6 +389,7 @@
 				977697061C533C3300217A0E /* DynamicsVC.swift in Sources */,
 				977696FE1C532FB600217A0E /* FrameworkTableViewController.swift in Sources */,
 				979AAF3C1C6445880066B3BE /* BackgroundVC.swift in Sources */,
+				97AB82C91C7D439D000508EB /* FBFriendsVC.swift in Sources */,
 				977697041C5333E900217A0E /* FrameworkCell.swift in Sources */,
 				977136CC1C61AA5B00FB30F9 /* ModelBase.swift in Sources */,
 				970B2FD21C4F304D002FB9B6 /* AppDelegate.swift in Sources */,
@@ -430,7 +450,7 @@
 		970B2FF41C4F304E002FB9B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -449,6 +469,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/shanerosse/Documents/FacebookSDKs-iOS-20160210";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -475,7 +496,7 @@
 		970B2FF51C4F304E002FB9B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -494,6 +515,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/shanerosse/Documents/FacebookSDKs-iOS-20160210";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

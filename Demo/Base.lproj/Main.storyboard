@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vgZ-PK-JBq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Msi-8v-s0R">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -10,7 +10,7 @@
         <!--FrameworkTableController-->
         <scene sceneID="3ej-3c-wh8">
             <objects>
-                <tableViewController title="NavController" id="Wlt-Df-5q7" userLabel="FrameworkTableController" customClass="FrameworkTableViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NavController" title="NavController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wlt-Df-5q7" userLabel="FrameworkTableController" customClass="FrameworkTableViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nvg-R5-8OQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,6 +105,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FV3-R2-b97" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1264.5" y="1502.25"/>
+        </scene>
+        <!--FriendsVC-->
+        <scene sceneID="oJP-Kw-Ybb">
+            <objects>
+                <tableViewController storyboardIdentifier="FBFriends" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wVp-fb-Up5" customClass="FBFriendsVC" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NAf-23-rnp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FBFriend" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBFriend" id="iTz-Wk-kRw">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iTz-Wk-kRw" id="ibe-jb-WKY">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wVp-fb-Up5" id="RWr-Ez-gkU"/>
+                            <outlet property="delegate" destination="wVp-fb-Up5" id="W4S-xX-1Af"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9KU-ma-GOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2197.5" y="1149"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="oSc-ZS-1al">
+            <objects>
+                <viewController storyboardIdentifier="FBShield" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JyI-Ku-JQj" customClass="FBLoginVC" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qoy-69-wJa"/>
+                        <viewControllerLayoutGuide type="bottom" id="e4m-VY-Mwh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fvn-Zn-DLl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czk-Yf-G1i">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="azn-MB-3O4"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="azn-MB-3O4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="azn-MB-3O4"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="backAction:" destination="JyI-Ku-JQj" eventType="touchUpInside" id="Ub8-1O-Hem"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="czk-Yf-G1i" firstAttribute="top" secondItem="Qoy-69-wJa" secondAttribute="bottom" id="41F-UT-hB8"/>
+                            <constraint firstItem="czk-Yf-G1i" firstAttribute="leading" secondItem="fvn-Zn-DLl" secondAttribute="leadingMargin" id="xE9-vn-KlA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="czk-Yf-G1i"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="41F-UT-hB8"/>
+                                <exclude reference="xE9-vn-KlA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="czk-Yf-G1i"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="41F-UT-hB8"/>
+                                <include reference="xE9-vn-KlA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="czk-Yf-G1i" id="tW0-NC-Rye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQi-7c-tNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3078" y="1311.75"/>
         </scene>
         <!--MessageBoardVC-->
         <scene sceneID="XB1-hY-gc4">
@@ -301,25 +394,6 @@
             </objects>
             <point key="canvasLocation" x="2827.5" y="2220.75"/>
         </scene>
-        <!--Tab 1-->
-        <scene sceneID="qMn-c2-bfE">
-            <objects>
-                <viewController title="Tab 1" id="zGx-js-U8Q" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cdo-42-EPL"/>
-                        <viewControllerLayoutGuide type="bottom" id="OVo-EK-hS3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="L83-67-FUW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="MaI-8x-Rca"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0WM-sd-tN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-510" y="821"/>
-        </scene>
         <!--BackgroundVC-->
         <scene sceneID="Rhn-rW-yyB">
             <objects>
@@ -403,24 +477,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFL-3B-Riy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066.5" y="645.75"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="7rr-iO-46L">
-            <objects>
-                <tabBarController id="vgZ-PK-JBq" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="CVD-xs-enC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="zGx-js-U8Q" kind="relationship" relationship="viewControllers" id="1jm-Pp-sjJ"/>
-                        <segue destination="Msi-8v-s0R" kind="relationship" relationship="viewControllers" id="T84-Hy-OrX"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Csb-eP-bfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1330" y="1149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2mn-NM-NKY">
